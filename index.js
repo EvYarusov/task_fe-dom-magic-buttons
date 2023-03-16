@@ -24,6 +24,11 @@ btn.addEventListener('click', () => {
 
 // здесь можете создать EventListener для второй кнопки
 clonedBtn.addEventListener('click', () => {
-  btn.style.backgroundColor = "#9c4a1a";
-  btn.style.color = "black";  
+  if (btn.style.color === "white") {
+    btn.style.backgroundColor = "#9c4a1a";
+    btn.style.color = "black";
+  } else {
+    btn.style.backgroundColor = "#f7c815";
+    btn.style.color = "white";
+  }
 })
